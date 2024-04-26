@@ -16,3 +16,12 @@ First i made an 8x1 mux using 7- 2x1 mux(there was no direct way to impelement 8
  [project link](https://www.tinkercad.com/things/5TJy9A5oKBb-shiny-allis-hango/editel)
 
  // For the reciever arduino there are some garbage values printed on the serial monited before my required values are printed(dont know the reason. T_T)
+
+## Challenge 3.
+3)  Collect the data printed into the serial using an Arduino, and then send that data over to another Arduino which is connected to a 16x2 lcd and print the received data into the lcd display. Use the UART communication protocol to send the message over.
+
+For this task i took 2 arduinos and connected it through seial communication. Then for the transmitter arduino, i creatted a character variable and store its value as Seial.read() and printed the same value on serial monitor. Then at the reciever end i check if any value is available in serial monitor through seril.available() command. And if there is any vlaue available, store it into a variable. On the receiver side i initialized the lcd display pins and usig lcd.print(), printed the received data into the lcd.    
+
+[project link](https://www.tinkercad.com/things/9fhaL8M3EhR-bodacious-krunk-wluff/editel?tenant=circuits)
+
+   
