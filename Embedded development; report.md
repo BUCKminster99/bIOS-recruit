@@ -24,4 +24,12 @@ For this task i took 2 arduinos and connected it through seial communication. Th
 
 [project link](https://www.tinkercad.com/things/9fhaL8M3EhR-bodacious-krunk-wluff/editel?tenant=circuits)
 
+## Challenge 4
+
+4)Make a secure lock with an Arduino and a keypad. Enter an 8 digit pin(the pin shouldn't be stored in plaintext, use encryption) on the keypad. If the pin matches, a servo will turn and the status of the door should be displayed on an OLED screen. The servo should turn back to it's original position after around 5-10 seconds.
+
+For this task i connected arduino with a keypad, servo motor and an oled display. I included the library <Keypad.h> for the keypad and initialized all the values coorespoding to each  keys on the keypad. Then i defined the pins connecting the keypad to the arduino. Then set the length of password as 8. After that i create to an array to store the values entered by the user.The values entered by the user were printed as '*' for encryption. After that i created an array and stored the password. Then using a foor loop iterated through each values of both array to check
+if both are same, if same it will rotate the servo motor 180 degrees and status of door will be displayed on the oled screen. For oled screen i connected the two data pins to analog A4 and A5 for I2c communication. If wrong password is entered Serial monitor will display wrong passowrd. A delay seconf of 6 seconds is defined to close the door after opening and the oled screen will display closed and servo will return to its original position.
+
+[project link](https://wokwi.com/projects/396301889925358593)
    
