@@ -33,3 +33,8 @@ if both are same, if same it will rotate the servo motor 180 degrees and status 
 
 [project link](https://wokwi.com/projects/396301889925358593)
    
+## Challenge 2
+2)  On this challenge ddrxn was defined as a data direction bit(0x24), portx was defined as a port (0x25)and pinx is definde as a pin(0x23). in the setup section ddrxn is set value by (1<<5) which is a bitwise shift operator  and its  its output will set the fifth bit to high, ie: set pin number 13 as output. ddrxn &= ~(1<<4); this will set fifth bit to low ie: set pinnumber 12 as input. portx |= (1<<4); this will set the 12 th pin to high.
+In the loop section if command will check weathe value at pin number 12 is low or not, as it is set to high else condition will satisfy at it will set a low volatage to pin number 12. For the simulation used a pull up resitor using a push button and set the value at 12 to high always, when push button is pressed value at 12 becommes zero and pin 13 is set to high which turns on the in-built led.
+
+[project link](https://www.tinkercad.com/things/bWEp4oGHIhZ-super-krunk-bombul/editel?sharecode=i5OBrx5EOMEgSww6ixSSEMW8FsxPUzPoBiga9rx7fKQ)
